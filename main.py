@@ -26,11 +26,11 @@ async def starter(message: types.Message):
     if str(message.from_user.id) == "1282778486":
         await message.answer("Hi, Karam!")
     else:
-        with open("Data.json") as Data_json:
-            Data = dict(json.load(Data_json))
-        Data[str(message.from_user.id)] = str(message.from_user.username)
-        with open("Data.json", 'w') as Data_json:
-            json.dump(Data, Data_json)
+        with open("data.json") as data_json:
+            data = dict(json.load(data_json))
+        data[str(message.from_user.id)] = str(message.from_user.username)
+        with open("data.json", 'w') as data_json:
+            json.dump(data, Data_json)
         await message.answer("Hi, I'm Ben. If you want to know what I can, write /help.")
 
 
