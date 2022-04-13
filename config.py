@@ -1,1 +1,1 @@
-API_TOKEN = Your bot API token
+API_TOKEN = "" # Your bot API token
